@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title>
+    <style>
+        /* reset */
+        *,
+        *::after,
+        *::before {
+            margin: 0;
+            /* padding: 0; */
+            box-sizing: inherit;
+        }
+
+        #navbar {
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            transition: top 0.3s;
+        }
+
+        #navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        #navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 2.5;
+            padding: 70px 44px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quo voluptatibus odio molestias
+                libero, harum ducimus asperiores consectetur repudiandae? Expedita blanditiis sunt excepturi obcaecati
+                culpa eaque eius doloribus laborum dolores voluptatum tempore deleniti non dolor, vero cum nulla,
+                asperiores saepe? Voluptatum tenetur vel aspernatur ipsa maiores atque officiis tempore soluta deleniti
+                molestias sint veniam corporis quis, reprehenderit voluptatibus numquam fugiat consectetur possimus
+                tempora blanditiis odit asperiores assumenda. Esse laborum ipsa officiis provident animi, in nam
+
+                explicabo magnam laudantium earum dignissimos incidunt velit est! Saepe similique eaque ullam rerum
+                repellendus, quas ad blanditiis minus itaque quasi atque nam eveniet quia quo labore iusto natus
+                necessitatibus omnis reprehenderit nobis sapiente ut voluptate maxime! Quia tempora aspernatur quae
+                praesentium deserunt ex eos eveniet nostrum. Saepe illum beatae repellat nisi earum. Sed eligendi fugit,
+                autem temporibus, cumque sapiente rem voluptatum, eaque ad voluptates nam rerum consectetur dolore alias
+                minima tempora tempore enim? Sunt ratione dicta assumenda repellat? Perspiciatis sunt, libero nostrum
+                voluptatibus ipsum veritatis distinctio molestiae! Suscipit, maiores quasi provident voluptatum ut
+                excepturi labore illo natus voluptatem nemo alias saepe optio laboriosam voluptate blanditiis nesciunt
+
+                accusantium ab laborum odio fugit reiciendis voluptates aliquid temporibus. Magni, culpa suscipit. Neque
+                saepe ratione, non cumque sed harum eaque quae ut nostrum nisi iste commodi laborum dolor quasi alias
+                facere omnis culpa qui illum. Magni cum necessitatibus laborum ab hic quisquam. Labore alias animi,
+                quaerat laborum inventore vero incidunt ullam ipsum ad voluptate? Quis cum incidunt, soluta at alias et
+                odit modi blanditiis minima enim ea sit sunt, animi hic vitae eaque. Ullam vel libero voluptatibus
+                voluptatem cupiditate iste suscipit nesciunt ipsum odit blanditiis doloremque eligendi asperiores
+                laudantium, aliquam dolorem amet assumenda. Autem error necessitatibus dolore illo ea asperiores quia,
+                libero tempore fugiat maxime molestiae voluptatem nam officiis a soluta adipisci, molestias perspiciatis
+                repudiandae, earum possimus. Officia obcaecati maxime exercitationem recusandae voluptate nulla
+                consequuntur quisquam enim velit, mollitia tempore voluptatum ut autem aut architecto beatae repudiandae
+                non incidunt! Ipsam dicta a adipisci nihil quas repellat itaque atque tempora. Sequi veniam alias
+                doloribus eveniet, officia consequatur eos impedit, et voluptatem enim quaerat architecto iste magni
+                explicabo cupiditate? Quos repellat pariatur a. Corrupti obcaecati libero, dolorum culpa placeat et
+                praesentium voluptatibus sit ad error cum rerum delectus maxime aut veritatis provident vel tenetur
+                explicabo animi velit! Delectus rerum beatae culpa harum repellat commodi aliquam reiciendis ea! Ea
+                veniam dolorem magnam qui ex distinctio libero inventore. Tempora voluptates aut optio sunt? Doloribus
+                repellat quas iusto, cum sit nam unde. Vero dolor odio iure corrupti officiis molestias eveniet eaque
+                veniam aspernatur nulla cupiditate aliquid officia nobis laudantium harum voluptatum ullam fugit, porro
+                optio soluta incidunt quis blanditiis odit! Facere porro nobis sapiente dolorem vel exercitationem nam
+                hic, voluptatibus ut qui nisi possimus cumque eveniet voluptatum at repudiandae tempora distinctio id
+                suscipit harum neque quas molestiae. Tenetur laudantium possimus, dignissimos molestias minima
+                molestiae, a quasi eligendi quidem voluptatum doloribus et? Doloremque, animi adipisci id ipsa aperiam
+                assumenda, hic itaque maiores qui quos ut, voluptatibus illum rerum eaque earum. Vel dicta dolorum autem
+                impedit.
+            </p>
+        </section>
+    </main>
+</body>
+<footer>
+    <script>
+        /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+        let prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            let currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-50px"
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
+</footer>
+
+</html>
